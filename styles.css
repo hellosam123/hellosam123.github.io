@@ -4,3 +4,46 @@ html{
     margin: 0;
 }
 
+img{
+    height: 100%;
+}
+
+.flexbox-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+#chessboard{
+    height: 800px;
+    width: 800px;
+}
+
+.row{
+    flex: 1;
+    height: 100px;
+    width: 800px;
+}
+
+.column{
+    flex: 1;
+    height: 100px;
+    width: 100px;
+}
+
+.light{
+    background-color: whitesmoke;
+}
+
+.dark{
+    background-color: slategray;
+}
