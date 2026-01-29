@@ -3,6 +3,7 @@
     
   <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -29,7 +30,7 @@
 
         </div>
         <div id="6" class="column dark">
-          <img src="assets/DarkKing.webp">
+          <button onclick="toggleModal('modal6')"><img src="assets/DarkKing.webp" class="piece"></button>
         </div>
         <div id="7" class="column light">
 
@@ -46,10 +47,10 @@
 
         </div>
         <div id="11" class="column dark">
-          <img src="assets/LightPawn.webp">
+          <img src="assets/LightPawn.webp" class="piece">
         </div>
         <div id="12" class="column light">
-          <img src="assets/LightRook.webp">
+          <img src="assets/LightRook.webp" class="piece">
         </div>
         <div id="13" class="column dark">
 
@@ -75,10 +76,10 @@
 
         </div>
         <div id="20" class="column dark">
-          <img src="assets/DarkKnight.webp">
+          <img src="assets/DarkKnight.webp" class="piece">
         </div>
         <div id="21" class="column light">
-          <img src="assets/DarkPawn.webp">
+          <img src="assets/DarkPawn.webp" class="piece">
         </div>
         <div id="22" class="column dark">
 
@@ -127,7 +128,7 @@
 
         </div>
         <div id="36" class="column dark">
-          <img src="assets/LightKing.webp">
+          <img src="assets/LightKing.webp" class="piece">
         </div>
         <div id="37" class="column light">
 
@@ -136,10 +137,10 @@
 
         </div>
         <div id="39" class="column light">
-          <img src="assets/LightPawn.webp">
+          <img src="assets/LightPawn.webp" class="piece">
         </div>
         <div id="40" class="column dark">
-          <img src="assets/LightPawn.webp">
+          <img src="assets/LightPawn.webp" class="piece">
         </div>
       </div>
       <div class="row flexbox-grid flex-row">
@@ -165,7 +166,7 @@
 
         </div>
         <div id="48" class="column light">
-          <img src="assets/DarkRook.webp">
+          <img src="assets/DarkRook.webp" class="piece">
         </div>
       </div>
       <div class="row flexbox-grid flex-row">
@@ -176,13 +177,13 @@
 
         </div>
         <div id="51" class="column light">
-          <img src="assets/LightPawn.webp">
+          <img src="assets/LightPawn.webp" class="piece">
         </div>
         <div id="52" class="column dark">
 
         </div>
         <div id="53" class="column light">
-          <img src="assets/LightBishop.webp">
+          <img src="assets/LightBishop.webp" class="piece">
         </div>
         <div id="54" class="column dark">
 
@@ -219,6 +220,14 @@
         <div id="64" class="column light">
 
         </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal6">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Hello, I am a modal!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
       </div>
     </div>
 
