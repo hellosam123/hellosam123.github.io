@@ -1,3 +1,7 @@
+:root{
+    --page-height: calc(100vh - 8rem);
+}
+
 html{
     font-family: serif;
     background-image: url(assets/nationalgamesgroup.jpeg);
@@ -9,7 +13,6 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    height: 100vh;
 }
 
 h1{
@@ -49,11 +52,11 @@ button{
 
 #layout{
     align-items: center;
-    height: 100%;
+    height: var(--page-height);
 }
 
 #title{
-    height: 100%;
+    height: 8rem;
     width: 100%;
     background-color: rgb(211,211,211,0.9);
     display: flex;
@@ -62,20 +65,20 @@ button{
 }
 
 #chessboard{
-    height: 600px;
-    width: 600px;
+    height: var(--page-height);
+    width: var(--page-height);
 }
 
 .row{
     flex: 1;
-    height: 75px;
-    width: 600px;
+    height: calc(var(--page-height)/8);
+    width: var(--page-height);
 }
 
 .column{
     flex: 1;
-    height: 75px;
-    width: 75px;
+    height: calc(var(--page-height)/8);
+    width: calc(var(--page-height)/8);
     transition: filter .05s ease-in-out;
 }
 
