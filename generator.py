@@ -1,6 +1,8 @@
 k = 1
 color = None
 
+# this code generates the html required for a chessboard with size 8x8 with light and dark squares
+
 for i in range(8):
     print("<div class=\"row flexbox-grid flex-row\">")
     for j in range(8):

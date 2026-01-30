@@ -1,4 +1,6 @@
 var modal;
+
+// uses primitive hard-coded ids to search for modals
 function openModal(id) {
     modal = document.getElementById(id);
     toggleModal();
@@ -6,11 +8,10 @@ function openModal(id) {
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
-    console.log("switch");
 }
 
 function windowOnClick(event) {
-    if (event.target === modal && modal.classList.contains("show-modal") == true) {
+    if (event.target === modal && modal.classList.contains("show-modal") == true) { // why is JS "true" lowercase???
         toggleModal();
     }
 }
