@@ -1,7 +1,13 @@
 html{
     font-family: serif;
-    background: rgb(253, 254, 246);
+    background: lightgray;
+    background-image: url(assets/backgroundimg.jpg);
+    background-size: cover;
+}
+
+body{
     margin: 0;
+    padding: 0;
 }
 
 button{
@@ -35,21 +41,31 @@ button{
     flex-direction: row;
 }
 
+#layout{
+    align-items: center;
+}
+
+#title{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+
 #chessboard{
-    height: 800px;
-    width: 800px;
+    height: 600px;
+    width: 600px;
 }
 
 .row{
     flex: 1;
-    height: 100px;
-    width: 800px;
+    height: 75px;
+    width: 600px;
 }
 
 .column{
     flex: 1;
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     transition: filter .2s ease-in-out;
 }
 
