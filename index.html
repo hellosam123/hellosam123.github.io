@@ -30,7 +30,7 @@
 
         </div>
         <div id="6" class="column dark">
-          <button onclick="toggleModal('modal6')"><img src="assets/DarkKing.webp" class="piece"></button>
+          <button onclick="openModal('modal6')"><img src="assets/DarkKing.webp" class="piece"></button>
         </div>
         <div id="7" class="column light">
 
@@ -47,10 +47,10 @@
 
         </div>
         <div id="11" class="column dark">
-          <img src="assets/LightPawn.webp" class="piece">
+          <button onclick="openModal('modal11')"><img src="assets/LightPawn.webp" class="piece"></button>
         </div>
         <div id="12" class="column light">
-          <img src="assets/LightRook.webp" class="piece">
+          <button onclick="openModal('modal12')"><img src="assets/LightRook.webp" class="piece"></button>
         </div>
         <div id="13" class="column dark">
 
@@ -76,10 +76,10 @@
 
         </div>
         <div id="20" class="column dark">
-          <img src="assets/DarkKnight.webp" class="piece">
+          <button onclick="openModal('modal20')" class="trigger"><img src="assets/DarkKnight.webp" class="piece"></button>
         </div>
         <div id="21" class="column light">
-          <img src="assets/DarkPawn.webp" class="piece">
+          <button onclick="openModal('modal21')" class="trigger"><img src="assets/DarkPawn.webp" class="piece"></button>
         </div>
         <div id="22" class="column dark">
 
@@ -128,7 +128,7 @@
 
         </div>
         <div id="36" class="column dark">
-          <img src="assets/LightKing.webp" class="piece">
+          <button onclick="openModal('modal36')" class="trigger"><img src="assets/LightKing.webp" class="piece"></button>
         </div>
         <div id="37" class="column light">
 
@@ -137,10 +137,10 @@
 
         </div>
         <div id="39" class="column light">
-          <img src="assets/LightPawn.webp" class="piece">
+          <button onclick="openModal('modal39')" class="trigger"><img src="assets/LightPawn.webp" class="piece"></button>
         </div>
         <div id="40" class="column dark">
-          <img src="assets/LightPawn.webp" class="piece">
+          <button onclick="openModal('modal40')" class="trigger"><img src="assets/LightPawn.webp" class="piece"></button>
         </div>
       </div>
       <div class="row flexbox-grid flex-row">
@@ -166,7 +166,7 @@
 
         </div>
         <div id="48" class="column light">
-          <img src="assets/DarkRook.webp" class="piece">
+          <button onclick="openModal('modal48')" class="trigger"><img src="assets/DarkRook.webp" class="piece"></button>
         </div>
       </div>
       <div class="row flexbox-grid flex-row">
@@ -177,13 +177,13 @@
 
         </div>
         <div id="51" class="column light">
-          <img src="assets/LightPawn.webp" class="piece">
+          <button onclick="openModal('modal51')" class="trigger"><img src="assets/LightPawn.webp" class="piece"></button>
         </div>
         <div id="52" class="column dark">
 
         </div>
         <div id="53" class="column light">
-          <img src="assets/LightBishop.webp" class="piece">
+          <button onclick="openModal('modal53')" class="trigger"><img src="assets/LightBishop.webp" class="piece"></button>
         </div>
         <div id="54" class="column dark">
 
@@ -225,8 +225,77 @@
 
     <div class="modal" id="modal6">
       <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h2>Hello, I am a modal!</h2>
+        <h2>Hello, I am a modal6!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal11">
+      <div class="modal-content">
+        <h2>Hello, I am a modal11!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
+      </div>
+    </div>
+
+        <div class="modal" id="modal12">
+      <div class="modal-content">
+        <h2>Hello, I am a modal12!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
+      </div>
+    </div>
+
+        <div class="modal" id="modal20">
+      <div class="modal-content">
+        <h2>Hello, I am a modal20!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal21">
+      <div class="modal-content">
+        <h2>Hello, I am a modal21!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal36">
+      <div class="modal-content">
+        <h2>Hello, I am a modal36!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal39">
+      <div class="modal-content">
+        <h2>Hello, I am a modal39!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal40">
+      <div class="modal-content">
+        <h2>Hello, I am a modal40!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal48">
+      <div class="modal-content">
+        <h2>Hello, I am a modal48!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal51">
+      <div class="modal-content">
+        <h2>Hello, I am a modal51!</h2>
+        <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal53">
+      <div class="modal-content">
+        <h2>Hello, I am a modal53!</h2>
         <p>Click in the top-right button to close the modal, os just click outside the modal. You can add even a shortcode!</p>
       </div>
     </div>
