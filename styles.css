@@ -3,7 +3,7 @@
 }
 
 html{
-    font-family: serif;
+    font-family: "Open Sans", sans-serif;
     background-image: url(assets/nationalgamesgroup.jpeg);
     background-size: cover;
 }
@@ -122,4 +122,14 @@ button{
   visibility: visible;
   transform: scale(1.0);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-img{
+    width: 100%;
+}
+
+@media (orientation: portrait){
+    body{
+        background-color: blue;
+    }
 }
