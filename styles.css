@@ -1,5 +1,5 @@
 :root{
-    --page-height: calc(100vh - 8rem);
+    --board-size: min(100vw, calc(100vh - 8rem));
 }
 
 html{
@@ -52,7 +52,7 @@ button{
 
 #layout{
     align-items: center;
-    height: var(--page-height);
+    height: var(--board-size);
 }
 
 #title{
@@ -65,20 +65,20 @@ button{
 }
 
 #chessboard{
-    height: var(--page-height);
-    width: var(--page-height);
+    height: var(--board-size);
+    width: var(--board-size);
 }
 
 .row{
     flex: 1;
-    height: calc(var(--page-height)/8);
-    width: var(--page-height);
+    height: calc(var(--board-size)/8);
+    width: var(--board-size);
 }
 
 .column{
     flex: 1;
-    height: calc(var(--page-height)/8);
-    width: calc(var(--page-height)/8);
+    height: calc(var(--board-size)/8);
+    width: calc(var(--board-size)/8);
     transition: filter .05s ease-in-out;
 }
 
@@ -129,7 +129,11 @@ button{
 }
 
 @media (orientation: portrait){
-    body{
-        background-color: blue;
+    html{
+        background-size: contain;
+    }
+    
+    .piece:hover{
+        transform: none;
     }
 }
