@@ -113,7 +113,8 @@ button{
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 2rem 2.5rem;
-  width: 30em;
+  width: 30vw;
+  max-height: 85vh;
   border-radius: 0.5rem;
 }
 
@@ -135,5 +136,10 @@ button{
     
     .piece:hover{
         transform: none;
+    }
+
+    .modal-content{
+        width: 80vw;
+        font-size: 2rem;
     }
 }
