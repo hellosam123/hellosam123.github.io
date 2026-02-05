@@ -10,6 +10,6 @@ for i in range(8):
             color = "light"
         else:
             color = "dark"
-        print(f"  <div id=\"{k}\" class=\"column {color}\">\n\n  </div>")
+        print(f"  <div id=\"{k}\" class=\"column {color}\">\n\n  </div>") #vscode default tab stop length is 8 spaces but for some reason in html its 2, so /t is not used here 
         k += 1
     print("</div>")
